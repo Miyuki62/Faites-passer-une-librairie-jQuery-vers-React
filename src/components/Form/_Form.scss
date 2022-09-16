@@ -1,0 +1,32 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	& form {
+		position: relative;
+		width: 60%;
+		margin-top: 2rem;
+		padding: 1rem 3rem;
+		border-radius: 10px;
+		background-color: $colorbgsecondary;
+		box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+		padding-bottom: 7rem;
+		& fieldset {
+			margin-top: 2rem;
+			padding: 1rem;
+			padding-bottom: 2rem;
+			border-radius: 10px;
+		}
+		& input[type="submit"] {
+			position: absolute;
+			bottom: 2rem;
+			left: 50%;
+			margin: 0;
+			transform: translate(-50%);
+			padding: 1rem 3rem;
+			cursor: pointer;
+		}
+	}
+}

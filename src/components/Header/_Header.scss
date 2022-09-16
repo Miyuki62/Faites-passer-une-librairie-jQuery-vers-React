@@ -1,0 +1,11 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 0 auto;
+	max-width: 1400px;
+	& img {
+		width: 150px;
+	}
+}

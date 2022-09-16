@@ -1,0 +1,22 @@
+@import "./styles/reset";
+@import "./styles/variables";
+@import "./styles/typo";
+
+@import "../src/components/Header/Header";
+@import "../src/components/Input/Input";
+@import "../src/components/Form/Form";
+
+body {
+	font-family: "Gudea", sans-serif;
+	font-size: 18px;
+	color: $colorfont;
+	min-height: 100vh;
+}
+
+h1 {
+	font-family: $fonttitle;
+	font-weight: 800;
+	font-size: 3rem;
+	color: $colorprimary;
+	margin-right: 5rem;
+}
