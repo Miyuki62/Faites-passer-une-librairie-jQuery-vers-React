@@ -4,10 +4,12 @@ import Header from "../components/Header/Header";
 
 const Home = () => {
 	return (
-		<main>
+		<>
 			<Header />
-			<Form />
-		</main>
+			<main>
+				<Form />
+			</main>
+		</>
 	);
 };
 

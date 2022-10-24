@@ -5,12 +5,17 @@
 @import "../src/components/Header/Header";
 @import "../src/components/Input/Input";
 @import "../src/components/Form/Form";
+@import "../src/pages/employee";
+@import "../src/components/EmployeesList/EmployeesList";
+@import "../src/components/TableFooter/TableFooter";
+@import "../src/components/TableHeader/TableHeader";
 
 body {
-	font-family: "Gudea", sans-serif;
+	font-family: "Montserrat";
 	font-size: 18px;
 	color: $colorfont;
 	min-height: 100vh;
+	background-color: whitesmoke;
 }
 
 h1 {
@@ -19,4 +24,43 @@ h1 {
 	font-size: 3rem;
 	color: $colorprimary;
 	margin-right: 5rem;
+}
+h2 {
+	font-family: $fonttitle;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.btn {
+	border: none;
+	background-color: $colorprimary;
+	padding: 1rem;
+	border-radius: 10px;
+	color: $colorbg;
+	margin: 1rem;
+	box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.61);
+}
+
+.btnmodal {
+	border: none;
+	margin-top: 20px;
+	width: 100%;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+main {
+	margin-bottom: 4rem;
+}
+
+.employee {
+	position: absolute;
+	left: 50%;
+	bottom: 3rem;
+	transform: translate(-50%);
+}
+
+.center {
+	text-align: center;
 }

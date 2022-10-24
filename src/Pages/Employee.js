@@ -8,10 +8,10 @@ const Employee = () => {
 		<>
 			<Header />
 			<main>
-				<h2>Current Employees</h2>
+				<h2 className="h2-employee">Current Employees</h2>
 				<EmployeesList />
 
-				<Link className="btn employee" to="/">
+				<Link className="btn-employee" to="/">
 					Home
 				</Link>
 			</main>
