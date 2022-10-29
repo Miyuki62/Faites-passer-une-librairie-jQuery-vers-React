@@ -23,8 +23,17 @@ function EmployeesList() {
 
 	const filterEmployee = () => {
 		if (filter !== null) {
-			return tableSorted.filter((employee) =>
-				employee.firstName.toLowerCase().includes(filter.toLowerCase())
+			return tableSorted.filter(
+				(employee) =>
+					employee.firstName.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.lastName.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.startDay.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.department.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.birthday.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.street.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.city.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.state.toLowerCase().includes(filter.toLowerCase()) ||
+					employee.zip.toLowerCase().includes(filter.toLowerCase())
 			);
 		} else {
 			return tableSorted;

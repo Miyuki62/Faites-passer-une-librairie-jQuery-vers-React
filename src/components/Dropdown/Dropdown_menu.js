@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 
 /**
  *
- * @returns custom Dropdown
+ * @returns custom Dropdown menu
  */
 
-function Dropdown({ name, datas, onChange, required }) {
+function Dropdown_menu({ name, datas, onChange, required }) {
 	return (
 		<div className="input">
 			<label className="input__label" htmlFor={name}>
@@ -28,9 +28,9 @@ function Dropdown({ name, datas, onChange, required }) {
 	);
 }
 
-export default Dropdown;
+export default Dropdown_menu;
 
-Dropdown.propTypes = {
+Dropdown_menu.propTypes = {
 	name: PropTypes.string,
 	datas: PropTypes.array,
 	onChange: PropTypes.func,

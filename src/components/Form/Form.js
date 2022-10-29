@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-pascal-case */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Input from "../Input/Input";
 import { useDispatch } from "react-redux";
 import states from "../../assets/dataStates.json";
 import departments from "../../assets/dataDepartment.json";
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown_menu from "dropdown-menu_op";
 
 import { addUser } from "../../app/slices/user.slice";
 import ReactModal from "react-modal";
@@ -115,7 +116,7 @@ function Form() {
 						label={"City"}
 						onChange={(e) => setCity(e.target.value)}
 					/>
-					<Dropdown
+					<Dropdown_menu
 						name={"State"}
 						required={"required"}
 						datas={states}
@@ -129,7 +130,7 @@ function Form() {
 						onChange={(e) => setZip(e.target.value)}
 					/>
 				</fieldset>
-				<Dropdown
+				<Dropdown_menu
 					name={"Department"}
 					required={"required"}
 					datas={departments}
