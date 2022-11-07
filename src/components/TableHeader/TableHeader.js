@@ -18,7 +18,7 @@ function TableHeader() {
 					{ name: 25, value: 25 },
 					{ name: 50, value: 50 },
 				]}
-				onChange={(e) => dispatch(changeLength(parseInt(e.target.value, 10)))}
+				onChange={(e) => dispatch(changeLength(parseInt(e.target.value, 5)))}
 			>
 				entries
 			</Dropdown_menu>
