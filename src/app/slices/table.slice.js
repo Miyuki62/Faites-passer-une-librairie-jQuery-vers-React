@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const tableSlice = createSlice({
 	name: "table",
-	initialState: { length: 5, filter: null, indexStart: 0, indexEnd: 10 },
+	initialState: { length: 5, filter: null, indexStart: 0, indexEnd: 5 },
 	reducers: {
 		changeLength: (state, action) => {
 			state.length = action.payload;
