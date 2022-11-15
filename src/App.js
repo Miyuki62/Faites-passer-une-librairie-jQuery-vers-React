@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Employee from "./pages/Employee";
-import Home from "./pages/Home";
-import Error404 from "./pages/Error404";
+import Employee from "./Pages/Employee";
+import Home from "./Pages/Home";
 
 function App() {
 	return (
